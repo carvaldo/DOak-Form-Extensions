@@ -1,4 +1,4 @@
-package com.github.carvaldo.doak
+package com.github.carvaldo.doakFormExtensions
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

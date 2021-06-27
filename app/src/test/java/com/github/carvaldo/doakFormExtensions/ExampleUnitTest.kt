@@ -1,4 +1,4 @@
-package com.github.carvaldo.doak
+package com.github.carvaldo.doakFormExtensions
 
 import org.junit.Test
 
