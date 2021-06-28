@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="DateInputView">
+        <attr name="pattern" format="string" />
+    </declare-styleable>
+</resources>
