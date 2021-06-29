@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="MaskInputView">
+        <attr name="mask" format="string" />
+    </declare-styleable>
+</resources>
