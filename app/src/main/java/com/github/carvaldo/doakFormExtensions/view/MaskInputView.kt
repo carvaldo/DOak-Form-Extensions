@@ -1,7 +1,6 @@
 package com.github.carvaldo.doakFormExtensions.view
 
 import android.content.Context
-import android.text.InputType
 import android.text.TextWatcher
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatEditText
@@ -32,6 +31,8 @@ open class MaskInputView : AppCompatEditText {
         init(attrs, defStyle)
     }
 
+    override fun toString() = text?.toString() ?: ""
+
     private fun init(attrs: AttributeSet?, defStyle: Int) {
         val a = context.obtainStyledAttributes(
             attrs, R.styleable.MaskInputView, defStyle, 0
@@ -39,7 +40,6 @@ open class MaskInputView : AppCompatEditText {
         mask = a.getString(
             R.styleable.MaskInputView_mask
         )
-        inputType = InputType.TYPE_NUMBER_FLAG_SIGNED
         a.recycle()
     }
 

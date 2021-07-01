@@ -51,7 +51,7 @@ class DateInputView : AppCompatEditText {
      *
      * @return String
      */
-    override fun toString(): String = this.text.toString()
+    override fun toString(): String = this.text?.toString() ?: ""
 
     private fun init(attrs: AttributeSet?, defStyle: Int) {
         val a = context.obtainStyledAttributes(
