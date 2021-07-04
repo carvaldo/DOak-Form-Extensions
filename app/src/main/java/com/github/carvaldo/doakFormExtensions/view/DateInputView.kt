@@ -68,7 +68,7 @@ class DateInputView : AppCompatEditText {
         dateFormat = if (pattern != null) {
             SimpleDateFormat(pattern, Locale.getDefault())
         } else {
-            SimpleDateFormat(null, Locale.getDefault())
+            SimpleDateFormat("MM/dd/yyyy", Locale.getDefault())
         }
         enableDateDialog()
         a.recycle()
